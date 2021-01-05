@@ -20,7 +20,61 @@ ul {
     margin: 0;
 }
 
+li {
+    list-style-type: none;
+}
+
 a {    
     text-decoration: none;
     color: inherit;
 }
+
+/* Container */
+
+.container {
+    width: 100%;    
+    margin: 0 auto;
+    padding: 0 30px;    
+}
+
+/* Sidebar 
+=========================*/ 
+
+.sidebar {
+    width: 25%;
+    height: 100vh;   
+
+    background-color: #e5ebeb;
+}
+
+.sidebar__header {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.avatar { 
+    border-radius: 50%;    
+    border: 3px solid  #bbb;        
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;       
+}
+
+.profile__item {
+    margin: 10px 0;
+    padding: 10px 0;
+    justify-content: center;  
+}
+
+.profile__about {
+    
+}
+
+
+
+
