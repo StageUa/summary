@@ -44,20 +44,21 @@ a {
 
 .sidebar {
     width: 25%;
-    height: 100vh;   
+    height: 100%;   
 
     background-color: #e5ebeb;
 }
 
-.sidebar__header {
-    display: block;
-    width: 100%;
-    height: 100%;
+.sidebar__header {   
     padding: 10px 0;
-    text-align: center;
+
 }
 
-.avatar { 
+.avatar {     
+    display: block;
+    max-width: 100%;
+    height: auto;
+
     border-radius: 50%;    
     border: 3px solid  #bbb;        
 }
@@ -66,15 +67,12 @@ a {
     display: flex;
     flex-direction: column;
 
-    padding: 5px;
+    margin: 5px;
 }
 
 .profile__item { 
-    display: flex;
-    flex-direction: column;
-    
-    display: flex;
-    flex-direction: column;
+    display: flex;    
+    flex-direction: column;       
 
     padding-left: 0;
     margin-bottom: 5px;    
@@ -91,14 +89,21 @@ a {
 
 .profile__link {
     width: 150px;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
     font-size: 14px;
+    color: #191e1f;
     font-weight: 300;
     font-family: 'Lato', sans-serif;
+    
 }
 
 .profile__link:hover {
     text-decoration: underline;
-    color: #000;
+    color: #000;    
 }
 
 .social__links {
@@ -114,15 +119,130 @@ a {
 
 .profile__name {
     width: 150px;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
     font-size: 14px;
+    color: #191e1f;
     font-weight: 300;
     font-family: 'Lato', sans-serif;
+
     text-align: left;
 }
 
 .profile__name:hover {
     text-decoration: underline;
     color: #000;
+}
+
+/* Skills 
+===============================*/
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    
+    margin: 10px 0;       
+}
+
+.skills__title {
+    margin: 0;
+    padding: 10px 0;
+
+    font-size: 20px;
+    color: #191e1f;
+    font-weight: 700;
+    font-family: 'Lato', sans-serif;    
+    text-transform: uppercase;    
+}
+
+.skills__list {
+    display: flex;
+    flex-direction: column;
+
+    padding: 5px 0;
+}
+
+.skills__item {
+    padding: 5px 0;
+
+    font-size: 16px;
+    color: #191e1f;
+    font-weight: 300;
+    font-family: 'Lato', sans-serif;    
+}
+
+progress::-moz-progress-bar {
+    background-image:
+    -moz-linear-gradient(
+      135deg, 
+      transparent 33%, 
+      rgba(0, 0, 0, 0.1) 33%, 
+      rgba(0, 0, 0, 0.1) 66%, 
+      transparent 66% 
+    ),
+    -moz-linear-gradient(
+      top, 
+      rgba(255, 255, 255, 0.25), 
+      rgba(0, 0, 0, 0.25)
+    ),
+    -moz-linear-gradient(
+      left, 
+      #09c, 
+      rgb(91, 22, 180)
+    );
+
+  border-radius: 2px; 
+  background-size: 35px 20px, 100% 100%, 100% 100%;
+}
+
+.skills__progress {
+    width: 100%;
+    height: 15px;
+    padding: 2px;
+    border-radius: 9px; 
+
+    border: 1px solid #191e1f;    
+    background-color: #e5ebeb;        
+}
+
+
+/* Languages 
+============================*/
+
+.languages {
+    display: flex;
+    flex-direction: column;
+
+    margin: 10px 0 50px 0;
+}
+
+.languages__title {
+    padding: 5px 0;
+
+    font-size: 20px;
+    color: #191e1f;
+    font-weight: 700;
+    font-family: 'Lato', sans-serif;    
+    text-transform: uppercase;
+}
+
+.languages__list {
+    display: flex;
+    flex-direction: column;
+
+    padding: 5px 0;
+}
+
+.languages__item {
+    padding: 5px 0;
+
+    font-size: 16px;
+    color: #191e1f;
+    font-weight: 300;
+    font-family: 'Lato', sans-serif;
 }
 
 
