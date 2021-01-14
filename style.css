@@ -31,6 +31,11 @@ a {
     color: inherit;
 }
 
+/* Main */
+.main {
+    display: flex;    
+}
+
 /* Container */
 
 .container {
@@ -244,6 +249,20 @@ progress::-moz-progress-bar {
     font-weight: 300;
     font-family: 'Lato', sans-serif;
 }
+
+
+/* Main */
+
+.main__page {
+    width: 75%;
+    display: block;
+    
+    padding: 10px 20px;
+    margin-left: 50px;    
+}
+
+
+
 
 
 
