@@ -20,15 +20,22 @@ body {
 
 ul {
     margin: 0;
-}
-
-li {
-    list-style-type: none;
+    padding-left: 0;
+    list-style: none;
 }
 
 a {    
     text-decoration: none;
     color: inherit;
+}
+
+p {
+    font-size: 16px;
+    line-height: 25px;
+    color: #191e1f;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    
 }
 
 /* Main */
@@ -195,7 +202,7 @@ progress::-moz-progress-bar {
     ),
     -moz-linear-gradient(
       left, 
-      #09c, 
+      #0099cc, 
       rgb(91, 22, 180)
     );
 
@@ -255,13 +262,71 @@ progress::-moz-progress-bar {
 
 .main__page {
     width: 75%;
-    display: block;
+    width: 700px;
+    display: block;   
     
     padding: 10px 20px;
     margin-left: 50px;    
 }
 
+.main__header {
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
 
+.main__title {
+    padding: 10px 0;
+
+    font-size: 50px;
+    color: #191e1f;
+    font-weight: 700;
+    font-family: 'Lato', sans-serif;
+}
+
+.main__subtitle {
+    padding: 10px 0;
+
+    font-size: 30px;
+    color: #191e1f;
+    font-weight: 300;
+    font-family: 'Lato', sans-serif;
+}
+
+.main__about {
+    padding-bottom: 40px;
+}
+
+.chapter__title {
+    font-size: 30px;
+    letter-spacing: 2px;
+    color: #0099cc;
+    font-weight: 700;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+
+    background: url(photo/rhombus.png) no-repeat 0 10px;
+    padding-left: 25px;    
+}
+
+.text__intro {    
+    text-align: left;
+}
+
+.main__experience {
+    padding-bottom: 40px;
+}
+
+.text__experience {
+    text-align: left;
+}
+
+.main__education {
+    padding-bottom: 40px;
+}
+
+.text__education {
+    text-align: left;
+}
 
 
 
