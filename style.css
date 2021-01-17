@@ -115,7 +115,7 @@ p {
 
 .profile__link:hover {
     text-decoration: underline;
-    color: #000;    
+    color: #0099cc;    
 }
 
 .social__links {
@@ -146,7 +146,7 @@ p {
 
 .profile__name:hover {
     text-decoration: underline;
-    color: #000;
+    color: #0099cc;
 }
 
 /* Skills 
@@ -308,8 +308,16 @@ progress::-moz-progress-bar {
     padding-left: 25px;    
 }
 
-.text__intro {    
+.text__intro {   
+    padding-left: 25px; 
     text-align: left;
+
+    font-size: 16px;
+    color: #191e1f;
+    letter-spacing: 0;
+    line-height: 25px;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
 }
 
 .main__experience {
@@ -317,7 +325,31 @@ progress::-moz-progress-bar {
 }
 
 .text__experience {
+    padding-left: 25px;
     text-align: left;
+
+    font-size: 16px;
+    color: #191e1f;
+    letter-spacing: 0;
+    line-height: 25px;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+}
+
+.experience__link {
+    padding-left: 25px;
+
+    font-size: 16px;
+    color: #191e1f;
+    letter-spacing: 0;
+    line-height: 25px;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+}
+
+.experience__link:hover {
+    text-decoration: underline;
+    color: #0099cc;
 }
 
 .main__education {
@@ -325,7 +357,15 @@ progress::-moz-progress-bar {
 }
 
 .text__education {
+    padding-left: 25px;
     text-align: left;
+
+    font-size: 16px;
+    color: #191e1f;
+    letter-spacing: 0;
+    line-height: 25px;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
 }
 
 
