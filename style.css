@@ -130,6 +130,7 @@ p {
 }
 
 .profile__name {
+    padding-left: 10px;
     width: 150px;
 
     overflow: hidden;
@@ -147,6 +148,8 @@ p {
 .profile__name:hover {
     text-decoration: underline;
     color: #0099cc;
+
+    
 }
 
 /* Skills 
@@ -274,8 +277,8 @@ progress::-moz-progress-bar {
     padding-bottom: 50px;
 }
 
-.main__title {
-    padding: 10px 0;
+.main__title {    
+    padding: 10px 0 0 25px;
 
     font-size: 50px;
     color: #191e1f;
@@ -284,7 +287,7 @@ progress::-moz-progress-bar {
 }
 
 .main__subtitle {
-    padding: 10px 0;
+    padding: 10px 0 0 25px;
 
     font-size: 30px;
     color: #191e1f;
@@ -332,12 +335,16 @@ progress::-moz-progress-bar {
     color: #191e1f;
     letter-spacing: 0;
     line-height: 25px;
-    font-weight: 300;
+    font-weight: 700;
     font-family: 'Roboto', sans-serif;
 }
 
 .experience__link {
+    display: flex;
     padding-left: 25px;
+    padding-bottom: 10px;
+
+    flex-direction: column;
 
     font-size: 16px;
     color: #191e1f;
